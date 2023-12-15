@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-right {
+}
+
+.form {
+  border: 1px solid #dadada;
+  padding: 20px 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.active {
+  background-color: red;
+}
+
+#pagination {
+  display: flex;
+  gap: 12px;
+}

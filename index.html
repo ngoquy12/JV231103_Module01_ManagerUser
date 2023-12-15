@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div>
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Tìm kiếm theo tên "
+          />
+        </div>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Tên</th>
+              <th>Giới tính</th>
+              <th>Ngày sinh</th>
+              <th>Email</th>
+              <th>Trạng thái</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+        <div id="pagination">
+          <button id="previousPage">Lùi</button>
+          <div id="pageNumberContainer">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+          </div>
+          <button id="nextPage">Tiếp</button>
+        </div>
+      </div>
+      <div class="container-right">
+        <form class="form" id="form">
+          <h3>Thêm mới tài khoản</h3>
+          <div class="form-group">
+            <label for="">Tên</label>
+            <input id="userName" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="">Giới tính</label>
+            <div>
+              <div><input type="radio" value="0" name="gender" /> Nam</div>
+              <div><input type="radio" value="1" name="gender" /> Nữ</div>
+              <div><input type="radio" value="2" name="gender" /> Khác</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Ngày sinh</label>
+            <input id="dateOfBirth" type="date" />
+          </div>
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" id="email" />
+            <button>Thêm mới</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
